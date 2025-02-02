@@ -15,36 +15,48 @@ html, body {
     background-color: yellow;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Keeps the brand on the left */
+    justify-content: flex-start;
     padding: 0 20px;
 }
 
 .navbar .nav-link {
-    background-color: red; 
+    background-color: #d9534f; 
     color: white;
     font-size: 18px;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    margin: 0 15px; /* Adds space between each nav-link */
+    margin: 0 15px;
 }
 
-/* Hover effect for the links */
+
 .navbar .nav-link:hover {
-    background-color: aliceblue;
+    background-color: #fa8f6b;
     transition: 0.5s;
 }
 
-/* Branding styles */
+
 .navbar-brand {
     font-size: 22px;
+    color: red;
+    background-color: white;
+    font-family: 'Lucida Console', monospace;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+/*
+.navbar-brand:hover {
+    background-color: aqua;
+    transition: 0.5s;
     color: red;
     font-family: 'Lucida Console', monospace;
     padding: 0;
     margin: 0;
-    text-decoration: none; /* Ensures no underlining or unwanted styling */
+    text-decoration: none;
+    overflow: hidden;
 }
-
+*/
 h1 {
     color: #d9534f; 
     font-size: 36px;
@@ -66,18 +78,19 @@ div {
     font-size: 20px;
 }
 
-#drive, #photon, #claw, #elevator {
+p {
     background-color: #d9534f;
     text-align: left;
     color: white;
-    padding: 10px 20px;
-}
-
-p {
-    background-color: white;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 20px;
+}
+
+ul {
+    background-color: #d9534f;
     text-align: center;
-    font-size: 15px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    list-style-type: none;
 }

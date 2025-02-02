@@ -6,6 +6,9 @@ from dash import html, dcc
 #setup page layout
 layout =  html.Div ([
     html.H1("About Us"),
-    html.Div("Founded in 2007? We're a 4-H robotics club. 52 members 23 mentors"),
-    html.P("Team Phoenix was founded in 2007. The team runs in ASD's space.")
+    html.Ul(id = "about_list", children= [html.Li("Founded in 2007"), 
+                                          html.Li("4-H Robotics Club"), 
+                                          html.Li("52 members, 23 mentors"),
+                                          ])
+
 ])
