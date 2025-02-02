@@ -1,8 +1,7 @@
-/* CSS, should be common sense */
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;  /* Ensures the page fills the screen */
+    height: 100%;
 }
 
 .navbar {
@@ -10,25 +9,40 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    width: 80%;
+    width: 100%;
     top: 0;
-    border: none;
+    height: 135px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Keeps the brand on the left */
+    padding: 0 20px;
 }
 
-.navbar .navbar-nav .nav-link{
+.navbar .nav-link {
     background-color: red; 
     color: white;
     font-size: 18px;
     padding: 10px 20px;
     border-radius: 5px;
-    border: none;
+    text-decoration: none;
+    margin: 0 15px; /* Adds space between each nav-link */
 }
 
-.navbar .navbar-brand {
+/* Hover effect for the links */
+.navbar .nav-link:hover {
+    background-color: aliceblue;
+    transition: 0.5s;
+}
+
+/* Branding styles */
+.navbar-brand {
     font-size: 22px;
     color: red;
-    font-family: Lucidatypewriter, monospace;
-    border:#d9534f;
+    font-family: 'Lucida Console', monospace;
+    padding: 0;
+    margin: 0;
+    text-decoration: none; /* Ensures no underlining or unwanted styling */
 }
 
 h1 {
@@ -39,6 +53,8 @@ h1 {
 
 h2 {
     text-align: left; 
+    color: #d9534f; 
+    font-size: 24px;
 }
 
 div {
@@ -48,4 +64,20 @@ div {
     margin-top: 20px;
     text-align: center;
     font-size: 20px;
+}
+
+#drive, #photon, #claw, #elevator {
+    background-color: #d9534f;
+    text-align: left;
+    color: white;
+    padding: 10px 20px;
+}
+
+p {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
 }

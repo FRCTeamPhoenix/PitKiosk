@@ -14,14 +14,16 @@ app = Dash(__name__, suppress_callback_exceptions=True, external_stylesheets=[db
 #define navigation bar
 navbar = dbc.NavbarSimple(
     children=[
-        dbc.NavItem(dbc.NavLink("Home", href="/")),
-        dbc.NavItem(dbc.NavLink("About", href="/about")),
-        dbc.NavItem(dbc.NavLink("Subsystems", href="/subsystems"))
+        dbc.NavItem(dbc.NavLink("Home", href="/"), id='home_button'),
+        dbc.NavItem(dbc.NavLink("About", href="/about"), id='about_button'),
+        dbc.NavItem(dbc.NavLink("Subsystems", href="/subsystems"), id='subsystems_button')
     ],
     brand= "Team Phoenix 2342", 
     brand_href="/",
-    color="red",
-    dark=True
+    color= '#d9534f',
+    dark=True, 
+    id= 'navigation'
+    
 
 )
 

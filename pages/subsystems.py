@@ -9,12 +9,12 @@ layout =  html.Div ([
     html.H1("Subsystems"),
     html.Div("We've got a bunch of them."),
     html.H2("Drive"), 
-    html.Div("Information about drive"),
+    html.Div(id='drive', children="Drive Info"),
     html.H2("Claw"),
-    html.Div("Information about claw"),
+    html.Div(id='claw', children="Claw Info"),
     html.H2("Photon"),
-    html.Div("Information about photon"),
+    html.Div(id='photon', children="Photon Info"),
     html.H2("Elevator"),
-    html.Div("Information about elevator"),
+    html.Div(id='elevator', children="Elevator Info"),
 #work in progress, needs to have more info and be aligned differently
 ])
