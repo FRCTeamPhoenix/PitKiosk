@@ -12,11 +12,11 @@ html, body {
     width: 100%;
     top: 0;
     height: 135px;
-    background-color: yellow;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 0 20px;
+    border-color: #d9534f;
 }
 
 .navbar .nav-link {
@@ -94,3 +94,14 @@ ul {
     border-radius: 10px;
     list-style-type: none;
 }
+
+#rio, #motors, #elevator-specs {
+    background-color: #d9534f;
+    text-align: left;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    width: 45%;
+    list-style-type: none;
+}
+    
