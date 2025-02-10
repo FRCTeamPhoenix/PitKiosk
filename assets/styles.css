@@ -35,7 +35,7 @@ html, body {
     box-shadow: 3% 3% 0 black;
     transform: skewX(-15deg);
     border: none;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 .navbar .nav-link:focus {
