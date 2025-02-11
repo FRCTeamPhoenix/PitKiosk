@@ -6,7 +6,7 @@ from dash.exceptions import PreventUpdate
 import os 
 
 #import pages
-from pages import home, about, subsystems, specs
+from pages import home, about, subsystems, specs, matches
 
 #create app
 app = Dash(__name__, suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
@@ -18,6 +18,7 @@ navbar = dbc.NavbarSimple(
         dbc.NavItem(dbc.NavLink("About", href="/about"), id='about_button'),
         dbc.NavItem(dbc.NavLink("Subsystems", href="/subsystems"), id='subsystems_button'),
         dbc.NavItem(dbc.NavLink("Specifications", href="/specs"), id='specs_button'),
+        dbc.NavItem(dbc.NavLink("Match Information", href="/matches"), id='matches_button')
     ],
     brand= dbc.Col(html.Img(src="/assets/WhiteRedBack.PNG", height= "95px")), 
     brand_href="/",
@@ -47,6 +48,9 @@ def display(pathname):
         return subsystems.layout
     elif pathname == '/specs':
         return specs.layout
+    elif pathname == '/matches':
+        pass
+        #return matches.layout
     else:
         return home.layout
 
