@@ -19,7 +19,8 @@ html, body {
     border-color: #d9534f;
 }
 
-/* styling for buttons from Uiverse.io by mobinkakei, with some changes */ 
+
+/* styling for buttons from Uiverse.io by mobinkakei, with some changes to fit with code*/ 
 .navbar .nav-link{
     display: flex;
     background-color: #d9534f; 
@@ -105,7 +106,7 @@ html, body {
       fill: white;
     }
 }
-
+/*end of button code*/
 
 .navbar-brand {
     font-size: 22px;
@@ -127,6 +128,7 @@ h2 {
     text-align: left; 
     color: #d9534f; 
     font-size: 24px;
+
 }
 
 div {
@@ -155,6 +157,11 @@ ul {
     list-style-type: none;
 }
 
+#subsystem_img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
 #rio, #motors, #elevator-specs {
     background-color: #d9534f;
     text-align: left;
@@ -164,4 +171,10 @@ ul {
     width: 45%;
     list-style-type: none;
 }
-    
+/*
+#drive-H2, #claw-H2, #photon-H2, #elevator-H2 {
+    text-align: center; 
+    color: #d9534f; 
+    font-size: 24px;
+}
+*/
