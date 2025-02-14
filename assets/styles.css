@@ -16,7 +16,7 @@ html, body {
     align-items: center;
     justify-content: flex-start;
     padding: 0 20px;
-    border-color: #d9534f;
+    /*border-color: #d9534f;*/
 }
 
 
@@ -110,7 +110,7 @@ html, body {
 
 .navbar-brand {
     font-size: 22px;
-    color: red;
+    /*color: red;*/
     background-color: white;
     font-family: 'Lucida Console', monospace;
     padding: 0;
@@ -162,7 +162,7 @@ ul {
     max-height: 50%;
 }
 
-#rio, #motors, #elevator-specs {
+.specs-ul{
     background-color: #d9534f;
     text-align: left;
     color: white;
@@ -178,3 +178,18 @@ ul {
     font-size: 24px;
 }
 */
+
+.about-p {
+    text-align: center;
+    color: color;
+    padding: 5px;
+    padding-left: 0%;
+    padding-right: 0%;
+    background-color: #d9534f;
+} 
+
+#table-editing-simple {
+    border-color: blue;
+    color:chocolate;
+    
+}

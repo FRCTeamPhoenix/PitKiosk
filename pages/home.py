@@ -6,6 +6,6 @@ from dash import html
 layout =  html.Div ([
     html.H1("Welcome to Team Phoenix"),
     html.P("Learn more about our robot and team by using our pit kiosk!"), 
-    html.P("[Insert robot pic if possible]")
+    html.Img(className= "home-img", src="/assets/robot_side_cad.png")
 ])
 

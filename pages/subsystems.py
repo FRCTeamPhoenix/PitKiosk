@@ -21,5 +21,4 @@ layout =  html.Div ([
     html.H2("Climber"),
     html.P(className= "subsystem-p", children="The climber is the mechanism that helps the robot complete endgame. This year, the robot will be doing a deep climb."),
     html.Img(className= "subsystem_img", src="/assets/climber_cad.png")
-#work in progress, needs to have more info
 ])

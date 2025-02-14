@@ -40,7 +40,7 @@ app.layout = html.Div([
     [Input(component_id='url', component_property='pathname')]  #checking for changes to the URL path
 )
 
-#simple logic for changing to pages
+#logic for changing to pages
 def display(pathname):
     if pathname == '/about':
         return about.layout
@@ -50,10 +50,10 @@ def display(pathname):
         return specs.layout
     elif pathname == '/matches':
         pass
-        #return matches.layout
+        return matches.layout
     else:
         return home.layout
 
-#ignore this, actually runs the app
+#actually runs the app
 if __name__ == '__main__':
     app.run(debug=True)
