@@ -8,7 +8,7 @@ data = OrderedDict(
         ("Opponent", ["3333/Team Name", "4444/Team Name", "5555/Team Name", "7777/Team Name", "8888/Team Name", "9999/Team Name"]),
         ("Team Phoenix Points", [1000, 1000, 1000, 1000, 1000, 1000]),
         ("Winner", ["Team Phoenix", "Team Phoenix", "Team Phoenix", "Team Phoenix", "Team Phoenix", "Team Phoenix"]),
-        ("Additional Points", ["Cooperition", "Cooperition", "Cooperition", "Cooperition", "Cooperition", "Cooperition"]),
+        ("Additional Points", ["Cooperition", "Coral RP", "Cooperition", "Auto RP", "Cooperition", "Barge RP"]),
     ]
 )
 
