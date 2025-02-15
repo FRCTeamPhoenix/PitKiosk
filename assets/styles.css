@@ -188,8 +188,10 @@ ul {
     background-color: #d9534f;
 } 
 
-#table-editing-simple {
-    border-color: blue;
-    color:chocolate;
-    
+#match-table {
+    border: 10%;
+    color:black;
+    height: 50%; 
+    background-color: #d9534f;
+    position: static;
 }
