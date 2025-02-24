@@ -180,12 +180,13 @@ ul {
 */
 
 .about-p {
-    text-align: center;
+    text-align: left;
     color: color;
-    padding: 5px;
-    padding-left: 0%;
-    padding-right: 0%;
+    padding: 0%;
+    padding-left: 3%;
+    padding-right: 3%;
     background-color: #d9534f;
+    width: 50%;
 } 
 
 #match-table {
@@ -193,5 +194,18 @@ ul {
     color:black;
     height: 50%; 
     background-color: #d9534f;
-    position: static;
+    position: relative;
+}
+
+.gif_player {
+    border: 0;
+    position: relative;
+    color: color;
+    padding: 0%;
+}
+
+.about_img {
+    width: 50%;
+    height: 50%;
+    position: relative;
 }

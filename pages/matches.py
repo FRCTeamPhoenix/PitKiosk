@@ -16,10 +16,9 @@ df = pd.DataFrame(
     OrderedDict([(name, col_data * 1) for (name, col_data) in data.items()])
 )
 
-layout = html.Div(dash_table.DataTable(
+layout = dash_table.DataTable(
     id= "match-table",
     data= df.to_dict('records'),
     columns=[{'id': c, 'name': c} for c in df.columns],
     page_action='none',
     style_table={'height': '250px', 'overflowY': 'auto'})
-)
