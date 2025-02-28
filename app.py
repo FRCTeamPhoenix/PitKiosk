@@ -14,15 +14,46 @@ app = Dash(__name__, suppress_callback_exceptions=True, external_stylesheets=[db
 #define navigation bar
 navbar = dbc.NavbarSimple(
     children=[
-        dbc.NavItem(dbc.NavLink("Home", href="/"), id='home_button'),
-        dbc.NavItem(dbc.NavLink("About", href="/about"), id='about_button'),
-        dbc.NavItem(dbc.NavLink("Subsystems", href="/subsystems"), id='subsystems_button'),
-        dbc.NavItem(dbc.NavLink("Specifications", href="/specs"), id='specs_button'),
-        dbc.NavItem(dbc.NavLink("Match Information", href="/matches"), id='matches_button')
+        dbc.NavItem(
+            dbc.NavLink(
+                ["Home", html.Img(src="/assets/home.png", style={'margin-left': '10px'})], 
+                href="/", 
+                id='home_button'
+            )
+        ),
+        dbc.NavItem(
+            dbc.NavLink(
+                ["About", html.Img(src="/assets/about.png", style={'margin-left': '10px'})], 
+                href="/about", 
+                id='about_button'
+            )
+        ),
+        dbc.NavItem(
+            dbc.NavLink(
+                ["Subsystems", html.Img(src="/assets/subsystems.png", style={'margin-left': '10px'})], 
+                href="/subsystems", 
+                id='subsystems_button'
+            )
+        ),
+        dbc.NavItem(
+            dbc.NavLink(
+                ["Specifications", html.Img(src="/assets/specs.png", style={'margin-left': '10px'})], 
+                href="/specs", 
+                id='specs_button'
+            )
+        ),
+        dbc.NavItem(
+            dbc.NavLink(
+                ["Match Information", html.Img(src="/assets/matches.png", style={'margin-left': '10px'})], 
+                href="/matches", 
+                id='matches_button'
+            )
+        )
     ],
+    style= {'background-color': "#d9534f"},
     brand= dbc.Col(html.Img(src="/assets/WhiteRedBack.PNG", height= "95px")), 
     brand_href="/",
-    color= '#d9534f',
+    color= '',
     dark=True, 
     id= 'navigation'
 )
