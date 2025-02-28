@@ -19,6 +19,6 @@ layout =  html.Div ([
     html.P(className= "subsystem-p", children="""The elevator helps the robot to reach different heights for intaking and scoring game pieces. It uses two motors and has different setpoints that correspond to the levels on the reef. """),
     html.Img(className= "subsystem_img", src="/assets/elevator_cad.png"),
     html.H2("Climber"),
-    html.P(className= "subsystem-p", children="The climber is the mechanism that helps the robot complete endgame. This year, the robot will be doing a deep climb."),
+    html.P(className= "subsystem-p", children="The climber is the mechanism that helps the robot complete endgame. It grabs the cage and helps the robot get off the ground. This year, the robot will be doing a deep climb."),
     html.Img(className= "subsystem_img", src="/assets/climber_cad.png")
 ])
