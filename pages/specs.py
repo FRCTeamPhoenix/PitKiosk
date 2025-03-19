@@ -6,10 +6,11 @@ import pandas as pd
 data = [
     {"ID": "1", "Part": "Motors", "Description": "Krakenx60's with Talon FX encoders"}, 
     {"ID": "2", "Part": "Robot Controller", "Description": "NI-roboRIO 2"}, 
-    {"ID": "3", "Part": "Height", "Description": "3 feet, 5.5 inches"}, 
-    {"ID": "4", "Part": "Weight", "Description": "108.2 pounds"}, 
-    {"ID": "5", "Part": "Elevator", "Description": "GreyT Cascade Elevator, 3 Stage -(West Coast Products)"}, 
-    {"ID": "6", "Part": "Autos", "Description": "We have 13,536 possible autos, and each can score 2 corals on L4, L3, or L2"}
+    {"ID": "3", "Part": "Height (starting)", "Description": "3 feet, 5.5 inches"}, 
+    {"ID": "4", "Part": "Height (full)", "Description": "8 feet"},
+    {"ID": "5", "Part": "Weight", "Description": "113.8 pounds"}, 
+    {"ID": "6", "Part": "Elevator", "Description": "GreyT Cascade Elevator, 3 Stage -(West Coast Products)"}, 
+    {"ID": "7", "Part": "Autos", "Description": "We have 13,536 possible autos, and each can score 2 corals on L4, L3, or L2"}
 ]
 
 df = pd.DataFrame(data)

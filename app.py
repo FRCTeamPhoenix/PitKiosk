@@ -50,12 +50,12 @@ navbar = dbc.NavbarSimple(
             )
         )
     ],
-    style= {'background-color': "#d9534f"},
+    #style= {'background-color': "#d9534f"},
     brand= dbc.Col(html.Img(src="/assets/WhiteRedBack.PNG", height= "95px")), 
     brand_href="/",
     color= '',
     dark=True, 
-    id= 'navigation'
+    id= 'navigation',
 )
 
 #Define app layout

@@ -25,11 +25,11 @@ html, body {
     display: flex;
     background-color: #d9534f; 
     color: white;
-    font-size: 18px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    font-size: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
     border-radius: 5px;
     text-decoration: none;
     transition: 1s;
@@ -145,6 +145,14 @@ p {
     border-radius: 10px;
 }
 
+ts {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 #subsystem_img, #home_img {
     max-width: 50%;
     max-height: 50%;
@@ -184,4 +192,43 @@ p {
     float: center;
     border-radius: 25px;
     border-color: #d9534f;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.touchscreen {
+    text-align: center;
+    color: #e04f0dff;
+    padding: 0;
+    display:inline;
+    background-color: aquamarine;
+    animation: flash 1s infinite;
+}
+
+.topnav {
+    background-color: #d9534f;
+    overflow: hidden;
+}
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color: #FFF;
+    color: #d9534f;
+}
+
+.topnav a.active {
+    background-color: #fbc638;
+    color: white;
 }
