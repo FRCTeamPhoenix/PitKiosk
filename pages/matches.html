@@ -7,14 +7,23 @@
         <link rel="stylesheet" href="../assets/styles.css">
     </head>
     <body>
-        <div class="topnav">
-            <a href="home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="subsystems.html">Subsystems</a>
-            <a href="specs.html">Specifications</a>
-            <a class="active" href="matches.html">Match Information</a>
-        </div>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+                <div class="navbar-buttons">
+                    <a href="home.html"><button class="navbar-btn">Home</button></a>
+                    <a href="about.html"><button class="navbar-btn">About Us</button></a>
+                    <a href="subsystems.html"><button class="navbar-btn">Subsystems</button></a>
+                    <a href="specs.html"><button class="navbar-btn">Specifications</button></a>
+                    <a href="matches.html"><button class="navbar-btn active">Match Information</button></a>
+                </div>
+            </div>
+        </nav>
+
+
         <h1>Match Information on Blue Alliance</h1>
-        <img class = "qr-code" src="../assets/matches.png">
+        <img id = "qr-code" src="../assets/black_qr.png">
     </body>
 </html>

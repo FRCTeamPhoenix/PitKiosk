@@ -1,125 +1,70 @@
+* {
+    margin: 0;
+    padding: 5%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.navbar, .navbar * {
+    padding: 0; 
+}
+
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
-}
-
-.navbar {
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     width: 100%;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: aqua; /* Red */
+    position: fixed;
     top: 0;
-    height: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 20px;
-    z-index: 10;
+    left: 0; /* Align navbar to the left edge */
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
 }
 
-
-/* styling for buttons from Uiverse.io by mobinkakei, with some changes to fit with code*/ 
-.navbar .nav-link{
-    display: flex;
-    background-color: #d9534f; 
+.navbar .navbar-header a {
     color: white;
-    font-size: 20px;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 15px;
     text-decoration: none;
-    transition: 1s;
-    box-shadow: 3% 3% 0 black;
-    transform: skewX(-15deg);
+}
+.navbar-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 0;
+}
+
+.navbar-btn {
+    background-color: #FF6347; 
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
     border: none;
-    /*cursor: pointer;*/
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
 }
 
-.navbar .nav-link:focus {
-    outline: none;
+.navbar-btn:hover {
+    background-color: #FFA500; 
+    transform: scale(1.05); 
 }
 
-.navbar .nav-link:hover {
-    transition: 0.5s;
-    box-shadow: 6px 6px 0 #fbc638;
-}
-
-.navbar .nav-link.second {
-    transition: 0.5s;
-    margin-right: 0px;
-}
-
-.navbar .nav-link:hover.second {
-    transition: 0.5s;
-    margin-right: 25%;
-}
-
-.span {
-    transform: skewX(15deg);
-}
-
-.second {
-    width: 20px;
-    margin-left: 30px;
-    position: relative;
-    top: 12%;
-}
-
-.one {
-    transition: 0.4s;
-    transform: translateX(-60%);
-}
-  
-.two {
-    transition: 0.5s;
-    transform: translateX(-30%);
-}
-
-.navbar .nav-link:hover.three {
-    animation: color_anim 1s infinite 0.2s;
-}
-  
-.navbar .nav-link:hover.one {
-    transform: translateX(0%);
-    animation: color_anim 1s infinite 0.6s;
-}
-  
-.navbar .nav-link:hover.two {
-    transform: translateX(0%);
-    animation: color_anim 1s infinite 0.4s;
-}
-
-@keyframes color_anim {
-    0% {
-      fill: white;
-    }
-  
-    50% {
-      fill: #fbc638;
-    }
-  
-    100% {
-      fill: white;
-    }
-}
-/*end of button code*/
-
-.navbar-brand {
-    font-size: 22px;
-    font-family: 'Lucida Console', monospace;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+.navbar-btn.active {
+    background-color: green; 
 }
 
 h1 {
     color: #d9534f; 
     font-size: 36px;
     text-align: center;
+    padding: 10%;
 }
 
 h2 {
@@ -128,28 +73,22 @@ h2 {
     font-size: 24px;
 }
 
-div {
+.home-stuff{
     background-color: white;
-    padding: 5px 10px 5px 10px;
+    padding: 3%;
     border-radius: 5px;
     margin-top: 20px;
     text-align: center;
     font-size: 20px;
+    display: block;
 }
 
 p {
     background-color: #d9534f;
     text-align: left;
     color: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-ts {
-    background-color: black;
-    text-align: center;
-    color: white;
-    padding: 20px;
+    /*padding: 5px;*/
+    padding: 1%;
     border-radius: 10px;
 }
 
@@ -157,20 +96,6 @@ ts {
     max-width: 50%;
     max-height: 50%;
 }
-
-#table {
-    margin-top: 0%;
-}
-
-.about-p {
-    text-align: left;
-    color: color;
-    padding: 0%;
-    padding-left: 3%;
-    padding-right: 3%;
-    background-color: #d9534f;
-    width: 50%;
-} 
 
 .gif_player {
     border: 0;
@@ -186,9 +111,9 @@ ts {
     position: relative;
 }
 
-.qr_code {
-    width: 30%;
-    height: 30%;
+#qr_code {
+    max-width: 50%;
+    max-height: 50%;
     float: center;
     border-radius: 25px;
     border-color: #d9534f;
@@ -209,26 +134,47 @@ ts {
     animation: flash 1s infinite;
 }
 
-.topnav {
-    background-color: #d9534f;
-    overflow: hidden;
-}
-  
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-  
-.topnav a:hover {
-    background-color: #FFF;
-    color: #d9534f;
+
+table {
+    width: 80%;
+    margin: 100px auto;
+    padding-top: 60px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.topnav a.active {
-    background-color: #fbc638;
-    color: white;
+th {
+    background-color: #FFD700; /* Yellow */
+    color: #333;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+}
+
+td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #FFEB3B; /* Light Yellow for hover effect */
+}
+
+/* Responsive Table */
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px 10px;
+    }
 }
