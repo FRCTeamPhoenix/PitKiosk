@@ -4,43 +4,59 @@
         <meta charset="UTF-8">
         <title>Subsystems</title>
         <style></style>
-        <link rel="stylesheet" href="../assets/styles.css">
+        <link rel="stylesheet" href="./assets/styles.css">
     </head>
     <body>
         <nav class="navbar">
             <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">WebSiteName</a>
-                </div>
                 <div class="navbar-buttons">
+                    <a href="home.html"><img id="brand" src= "./assets/RedNoBack.PNG"></a>
                     <a href="home.html"><button class="navbar-btn">Home</button></a>
                     <a href="about.html"><button class="navbar-btn">About Us</button></a>
                     <a href="subsystems.html"><button class="navbar-btn active">Subsystems</button></a>
                     <a href="specs.html"><button class="navbar-btn">Specifications</button></a>
                     <a href="matches.html"><button class="navbar-btn">Match Information</button></a>
                 </div>
+                <div class="navbar-header">
+                </div>
             </div>
         </nav>
 
 
-        <h1>Subsystems</h1>
+        <div class="subsystems-stuff">
+        <br>
+        <br>
+        <br>
         <h2>Drive</h2>
-        <p>The drivetrain is a system of components that help the robot move around. 
-            It is the base of the robot and uses motors and wheels.
-            We use swerve drive.</p>
+        <p>The drivetrain is the heart of the robot's mobility, allowing it to navigate and perform tasks on the field. 
+            It consists of a series of motors and wheels that provide motion. Our robot utilizes a swerve drive system, offering exceptional agility and 
+            precision by allowing independent control of each wheel's speed and direction. This enables fast and dynamic movement in all directions.</p>
+        <img id = "subsystem_img" src = "./assets/drive_cad.png">
         <h2>Claw and Wrist</h2>
-        <p>The claw intakes game pieces and helps hold them during transport. 
-            A motor causes the wheels in the claw to spin, and depending on the direction, it can either take in or push out pieces. 
-            The wrist mechanism uses a motor and allows the claw to tilt to set angles for intake and scoring.</p>
+        <p>The claw is a key mechanism that grabs and holds game pieces for transport. 
+            It operates using motor-driven wheels that can either intake or expel pieces, depending on 
+            the direction of the motor’s rotation. The wrist mechanism, powered by another motor, allows the claw to tilt to 
+            specific angles, optimizing the intake and scoring positions based on the task at hand. 
+            This combination of claw and wrist provides versatility in manipulating objects of varying sizes.</p>
+        <img id = "subsystem_img" src = "./assets/claw_cad.png">
         <h2>Photon Vision</h2>
-        <p>This subsytem helps with vision-based target tracking, and provides like target distance, angle, and position. 
-            It is used to track AprilTags, which are on the field and help the robot align to targets.</p>
+        <p>Photon Vision is an advanced vision subsystem that enables the robot to track and interact with targets on the field.
+             It leverages cameras and image processing software to determine critical information such as target distance, angle, and position. 
+             The system primarily tracks AprilTags, markers placed on the field that help the robot align itself accurately with targets for precise 
+             positioning and scoring. This system significantly enhances the robot’s autonomous capabilities.</p>
         <h2>Elevator</h2>
-        <p>The elevator helps the robot to reach different heights for intaking and scoring game pieces. 
-            It uses two motors and has different setpoints that correspond to the levels on the reef.</p>
+        <p>The elevator subsystem enables the robot to reach different heights, which is essential for both 
+            intaking and scoring game pieces. It uses two motors for vertical movement, with multiple setpoints corresponding to 
+            different heights on the playing field. The elevator system is designed to provide smooth, controlled movement, allowing the 
+            robot to operate efficiently across various levels of the game.</p>
+        <img id = "subsystem_img" src = "./assets/elevator_cad.png">
         <h2>Climber</h2>
-        <p>The climber is the mechanism that helps the robot complete endgame. It grabs the cage and helps the robot get off the ground. 
-            This year, the robot will be doing a deep climb.</p>
+        <p>The climber is a critical endgame mechanism that allows the robot to elevate itself off the ground by engaging the cage. 
+            This year, the robot is equipped with a specialized mechanism designed for a deep climb, allowing it to ascend to higher 
+            levels more effectively. Successful climbing requires precise control and timing, helping the robot secure valuable points
+            during the final moments of the game.</p>
+        <img id = "subsystem_img" src = "./assets/climber_cad.png">
+        </div>
         
     </body>
 </html>
