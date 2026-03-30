@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Phoenix — Home</title>
+  <link rel="stylesheet" href="./assets/styles2026.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-buttons">
+      <a href="index1.html"><img id="brand" src="./assets/RedNoBack.PNG" alt="Phoenix"></a>
+      <a href="index1.html"><button class="navbar-btn active"><img src="./assets/home.png" alt=""> Home</button></a>
+      <a href="about1.html"><button class="navbar-btn"><img src="./assets/about.png" alt=""> About Us</button></a>
+      <a href="subsystems1.html"><button class="navbar-btn"><img src="./assets/subsystems.png" alt=""> Subsystems</button></a>
+      <a href="specs1.html"><button class="navbar-btn"><img src="./assets/specs.png" alt=""> Specifications</button></a>
+      <a href="info1.html"><button class="navbar-btn"><img src="./assets/matches.png" alt=""> Scouting Info</button></a>
+    </div>
+  </div>
+</nav>
+<div class="content">
+  <div class="content-wrapper">
+    <div class="home-hero">
+      <div class="badge"><div class="badge-dot"></div>FRC Team 2342 · Nashua, NH</div>
+      <h1>Team<span class="fire-text">Phoenix</span></h1>
+      <div class="team-num">2342</div>
+      <div class="touch-notice">
+        <svg 
+          width="13" 
+          height="13" 
+          viewBox="0 0 24 24" 
+          fill="none" 
+          stroke="currentColor" 
+          stroke-width="2.5" 
+          stroke-linecap="round">
+          <path d="M18 11V6a2 2 0 0 0-4 0M14 10V4a2 2 0 0 0-4 0M10 10.5V6a2 2 0 0 0-4 0v3a8 8 0 0 0 16 0V13a2 2 0 0 0-4 0"/>
+        </svg>
+        Touchscreen — tap to explore
+      </div>
+      <div class="robot-frame" style="max-width:480px; margin:0 auto; display:block;">
+        <img src="./assets/robot_rotating.gif" alt="Robot">
+      </div>
+</div>
+    <!-- <div class="stat-grid">
+      <div class="stat-card reveal"><span class="stat-num">2342</span><span class="stat-lbl">Team Number</span></div>
+      <div class="stat-card reveal"><span class="stat-num">3×L4</span><span class="stat-lbl">Auto Coral</span></div>
+      <div class="stat-card reveal"><span class="stat-num">Deep</span><span class="stat-lbl">Climb Capable</span></div>
+    </div> -->
+  </div>
+</div>
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add("visible"), i * 120);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

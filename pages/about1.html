@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Phoenix — About</title>
+  <link rel="stylesheet" href="./assets/styles2026.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-buttons">
+      <a href="index1.html"><img id="brand" src="./assets/RedNoBack.PNG" alt="Phoenix"></a>
+      <a href="index1.html"><button class="navbar-btn"><img src="./assets/home.png" alt=""> Home</button></a>
+      <a href="about1.html"><button class="navbar-btn active"><img src="./assets/about.png" alt=""> About Us</button></a>
+      <a href="subsystems1.html"><button class="navbar-btn"><img src="./assets/subsystems.png" alt=""> Subsystems</button></a>
+      <a href="specs1.html"><button class="navbar-btn"><img src="./assets/specs.png" alt=""> Specifications</button></a>
+      <a href="info1.html"><button class="navbar-btn"><img src="./assets/matches.png" alt=""> Scouting Info</button></a>
+    </div>
+  </div>
+</nav>
+<div class="content">
+  <div class="content-wrapper">
+    <p class="little-text">Who We Are</p>
+    <h1 style="margin-bottom:32px">About <span class="fire-text">Our Team</span></h1>
+    <div class="about-grid">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div class="panel reveal">
+          <p class="about-p">Team Phoenix is a <i>FIRST</i> Robotics team based in Nashua, New Hampshire. Our core philosophy centers around our student-based leadership structure, helping every student develop skills imperative to future success.</p>
+          <br>
+          <p class="about-p">Students learn to take initiative, communicate professionally, and advocate for themselves and others — fostering a collaborative and supportive environment in which all members feel safe and comfortable.</p>
+        </div>
+        <div class="mission-block reveal">
+          <div class="mission-q">"</div>
+          <p class="mission-text">Changing the Lives of Youth Through Robotics.</p>
+        </div>
+      </div>
+      <div class="photo-wrap reveal">
+        <img src="./assets/teampic2026.jpg" alt="Team Phoenix">
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add("visible"), i * 80);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

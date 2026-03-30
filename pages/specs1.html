@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Phoenix — Specifications</title>
+  <link rel="stylesheet" href="./assets/styles2026.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-buttons">
+      <a href="index1.html"><img id="brand" src="./assets/RedNoBack.PNG" alt="Phoenix"></a>
+      <a href="index1.html"><button class="navbar-btn"><img src="./assets/home.png" alt=""> Home</button></a>
+      <a href="about1.html"><button class="navbar-btn"><img src="./assets/about.png" alt=""> About Us</button></a>
+      <a href="subsystems1.html"><button class="navbar-btn"><img src="./assets/subsystems.png" alt=""> Subsystems</button></a>
+      <a href="specs1.html"><button class="navbar-btn active"><img src="./assets/specs.png" alt=""> Specifications</button></a>
+      <a href="info1.html"><button class="navbar-btn"><img src="./assets/matches.png" alt=""> Scouting Info</button></a>
+    </div>
+  </div>
+</nav>
+<div class="content">
+  <div class="content-wrapper">
+    <p class="little-text">Technical Data</p>
+    <h1 style="margin-bottom:36px">Robot <span class="fire-text">Specifications</span></h1>
+    <div class="spec-grid">
+      <div class="spec-item reveal">
+        <h3>Robot Frame</h3>
+        <p>28 × 28 in</p>
+        <small>Without bumpers</small>
+      </div>
+      <div class="spec-item reveal">
+        <h3>Drive</h3>
+        <p>Swerve Drive</p>
+        <small>L4 gearing</small>
+      </div>
+      <div class="spec-item reveal">
+        <h3>Robot Controller</h3>
+        <p>roboRIO 2</p>
+        <small>NI National Instruments</small>
+      </div>
+      <div class="spec-item reveal">
+        <h3>Height — Starting</h3>
+        <p>3 ft 5.5 in</p>
+        <small>Folded configuration</small>
+      </div>
+      <div class="spec-item reveal">
+        <h3>Height — Full Extension</h3>
+        <p>8 ft</p>
+        <small>Max elevator reach</small>
+      </div>
+      <div class="spec-item reveal">
+        <h3>Robot Weight</h3>
+        <p>114.3 lb</p>
+        <small>Final competition weight</small>
+      </div>
+      <!-- <div class="spec-item spec-wide reveal">
+        <h3>Elevator System</h3>
+        <p>GreyT Cascade</p>
+        <small>Multi-stage cascading elevator · dual-motor drive · precise height setpoints</small>
+      </div> -->
+    </div>
+    <div class="fdiv"></div>
+    <!-- <div class="panel" style="text-align:center;padding:36px 32px">
+      <p class="little-text" style="justify-content:center">Drive Configuration</p>
+      <h2 style="border:none;font-size:32px;margin-bottom:14px">Swerve Drive</h2>
+      <p style="max-width:520px;margin:0 auto">Independent control of each wheel's speed and direction — enabling omnidirectional movement with exceptional precision and agility on the competition field.</p>
+    </div> -->
+  </div>
+</div>
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add("visible"), i * 80);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
