@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Phoenix — Specifications</title>
+  <link rel="stylesheet" href="./assets/styles2026.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-buttons">
+      <a href="index.html"><img id="brand" src="./assets/RedNoBack.PNG" alt="Phoenix"></a>
+      <a href="index.html"><button class="navbar-btn"><img src="./assets/home.png" alt=""> Home</button></a>
+      <a href="about.html"><button class="navbar-btn"><img src="./assets/about.png" alt=""> About Us</button></a>
+      <a href="subsystems.html"><button class="navbar-btn"><img src="./assets/subsystems.png" alt=""> Subsystems</button></a>
+      <a href="specs.html"><button class="navbar-btn"><img src="./assets/specs.png" alt=""> Specifications</button></a>
+      <a href="info.html"><button class="navbar-btn"><img src="./assets/matches.png" alt=""> Scouting Info</button></a>
+      <a href="outreach.html"><button class="navbar-btn active">Outreach</button></a>
+    </div>
+  </div>
+</nav>
+<div class="content">
+  <div class="content-wrapper">
+    <p class="little-text">Giving Back to the Community</p>
+    <h1 style="margin-bottom:36px"> <span class="fire-text">Outreach</span></h1>
+    <div class="sub-section panel reveal">
+      <div class="sub-header">
+        <h2 style="border:none;margin:0;padding:0">EarthFIRST</h2>
+      </div>
+      <div class="sub-content">
+        <p>Our goal at EarthFIRST is to integrate sustainability into every aspect of the FIRST experience. 
+            We urge groups to reduce waste, reuse and recycle, and come up with innovative ways to make robotics more 
+            ecologically friendly. We are strengthening robotics sustainability through cooperation, education, and mutual dedication. </p>
+        <div class="img-wrap"><img src="./assets/Screenshot 2026-03-31 201436.png"></div>
+      </div>
+    </div>
+
+    <div class="sub-section panel reveal">
+      <div class="sub-header">
+        <h2 style="border:none;margin:0;padding:0">FIRST LEGO League</h2>
+      </div>
+      <div class="sub-content">
+        <p>Team Phoenix hosts annual FLL open houses and summer camps to start 5 FLL teams in 2024 and 9 FLL teams in 2025. Both years we’ve had an all girls team and this year we’ve expanded to four homeschool teams, including one in Ohio! We also distribute FLL flyers to children during their annual Trunk or Treat event to encourage program participation. </p>
+        <div class="img-wrap"><img src="./assets/Screenshot 2026-03-31 201626.png"></div>
+      </div>
+    </div>
+
+    <div class="sub-section panel reveal">
+      <div class="sub-header">
+        <h2 style="border:none;margin:0;padding:0">Advocacy</h2>
+      </div>
+      <div class="sub-content">
+        <p>We launched "Reignite STEM" by submitting House Resolution 9 to advocate for equal STEM education in New Hampshire high schools. Our team continues to develop this initiative in preparation for a formal House Bill. </p>
+        <div class="img-wrap"><img src="./assets/Screenshot 2026-03-31 201813.png"></div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add("visible"), i * 80);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
+</script>
+
+<script>
+document.addEventListener('keydown', e => {
+  if (e.key === '1') window.location.href = 'index.html';
+  if (e.key === '2') window.location.href = 'about.html';
+  if (e.key === '3') window.location.href = 'subsystems.html';
+  if (e.key === '4') window.location.href = 'specs.html';
+  if (e.key === '5') window.location.href = 'info.html';
+  if (e.key === '6') window.location.href = 'outreach.html';
+});
+</script>
+
+</body>
+</html>

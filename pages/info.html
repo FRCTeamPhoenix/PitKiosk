@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Phoenix — Scouting Info</title>
+  <link rel="stylesheet" href="./assets/styles2026.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-buttons">
+      <a href="index.html"><img id="brand" src="./assets/RedNoBack.PNG" alt="Phoenix"></a>
+      <a href="index.html"><button class="navbar-btn"><img src="./assets/home.png" alt=""> Home</button></a>
+      <a href="about.html"><button class="navbar-btn"><img src="./assets/about.png" alt=""> About Us</button></a>
+      <a href="subsystems.html"><button class="navbar-btn"><img src="./assets/subsystems.png" alt=""> Subsystems</button></a>
+      <a href="specs.html"><button class="navbar-btn"><img src="./assets/specs.png" alt=""> Specifications</button></a>
+      <a href="info.html"><button class="navbar-btn active"><img src="./assets/matches.png" alt=""> Scouting Info</button></a>
+      <a href="outreach.html"><button class="navbar-btn"></button></a>
+    </div>
+  </div>
+</nav>
+<div class="content">
+  <div class="content-wrapper">
+    <p class="little-text">For Alliance Partners</p>
+    <h1 style="margin-bottom:36px">Scouting <span class="fire-text">Information</span></h1>
+    <div class="info-layout">
+      <div class="scout-cards">
+        <div class="info-item reveal">
+          <h2>Shooting Ability</h2>
+          <p>The robot consistently shoots at a rate of <span style="color:var(--fire-3);font-weight:500">8</span></p>
+        </div>
+        <div class="info-item reveal">
+          <h2>Trench & Bump</h2>
+          <p>The robot can consistently drive <span style="color:var(--fire-3);font-weight:500">under the trench</span>, and can drive <span style="color:var(--fire-3);font-weight:500">over the bump</span> when needed.</p>
+        </div>
+        <div class="info-item reveal">
+          <h2>Autonomous</h2>
+          <p>Our robot is capable of intaking from the <span style="color:var(--fire-3);font-weight:500">neutral zone and scoring fuel during autonomous</span>. We start from the <span style="color:var(--fire-3);font-weight:500">either trench</span> and can either <span style="color:var(--fire-3);font-weight:500">fully sweep</span> the neutral zone or <span style="color:var(--fire-3);font-weight:500">sweep halfway</span> through and return to alliance zone. </p>
+        </div>
+        <div class="info-item reveal">
+          <h2>Teleop</h2>
+          <p>Primarily <span style="color:var(--fire-3);font-weight:500">cycles neutral zone → shooting into hub</span>, can <span style="color:var(--fire-3);font-weight:500">pass to alliance zone</span>, feed to <span style="color:var(--fire-3);font-weight:500">outpost</span>, and play <span style="color:var(--fire-3);font-weight:500">defense</span> when necessary. </p>
+        </div>
+        <div class="info-item reveal">
+          <h2>Drive Team Experience</h2>
+          <p>Driver: <span style="color:var(--fire-3);font-weight:500">3+ years</span> </p>
+          <p>Operator: <span style="color:var(--fire-3);font-weight:500">1 year</span> </p> 
+          <p>Drive Coach: <span style="color:var(--fire-3);font-weight:500">2+ years</span> </p> 
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="qr-panel reveal">
+          <span class="qr-lbl">Blue Alliance Page</span>
+          <img id="qr_code" src="./assets/qr_code.png" alt="Blue Alliance QR Code">
+          <p style="font-size:11px;color:var(--text-3);margin-top:10px;line-height:1.5">Scan for full match history &amp; stats</p>
+        </div>
+        <div class="panel" style="padding:18px">
+          <p style="font-family:'Rajdhani',sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--text-3);margin-bottom:14px">Capabilities</p>
+          <div class="cap-list">
+            <div class="cap-item"><div class="cap-dot"></div><span class="cap-txt">Swerve Drive</span></div>
+            <div class="cap-item"><div class="cap-dot"></div><span class="cap-txt">Trench</span></div>
+            <div class="cap-item"><div class="cap-dot"></div><span class="cap-txt">Ground Intake</span></div>
+            <div class="cap-item"><div class="cap-dot"></div><span class="cap-txt">AprilTag Vision</span></div>
+            <div class="cap-item"><div class="cap-dot"></div><span class="cap-txt">Defense</span></div>
+            <div class="cap-item"><div class="cap-dot"></div><span class="cap-txt">Passing</span></div>
+          </div>
+        </div>
+        <div class="panel" style="padding:16px;background:linear-gradient(135deg,rgba(255,69,0,0.07),transparent)">
+          <p style="font-size:13px;line-height:1.65;color:var(--text-2)">Our robot is built for speed, precision, and adaptability — strong performance across all phases of competition.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add("visible"), i * 80);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
+</script>
+
+<script>
+document.addEventListener('keydown', e => {
+  if (e.key === '1') window.location.href = 'index.html';
+  if (e.key === '2') window.location.href = 'about.html';
+  if (e.key === '3') window.location.href = 'subsystems.html';
+  if (e.key === '4') window.location.href = 'specs.html';
+  if (e.key === '5') window.location.href = 'info.html';
+  if (e.key === '6') window.location.href = 'outreach.html';
+});
+</script>
+
+</body>
+</html>

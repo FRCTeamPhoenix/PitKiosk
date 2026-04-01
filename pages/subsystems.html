@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Phoenix — Subsystems</title>
+  <link rel="stylesheet" href="./assets/styles2026.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-buttons">
+      <a href="index.html"><img id="brand" src="./assets/RedNoBack.PNG" alt="Phoenix"></a>
+      <a href="index.html"><button class="navbar-btn"><img src="./assets/home.png" alt=""> Home</button></a>
+      <a href="about.html"><button class="navbar-btn"><img src="./assets/about.png" alt=""> About Us</button></a>
+      <a href="subsystems.html"><button class="navbar-btn active"><img src="./assets/subsystems.png" alt=""> Subsystems</button></a>
+      <a href="specs.html"><button class="navbar-btn"><img src="./assets/specs.png" alt=""> Specifications</button></a>
+      <a href="info.html"><button class="navbar-btn"><img src="./assets/matches.png" alt=""> Scouting Info</button></a>
+      <a href="outreach.html"><button class="navbar-btn">Outreach</button></a>
+    </div>
+  </div>
+</nav>
+<div class="content">
+  <div class="content-wrapper">
+    <p class="little-text">Robot Design</p>
+    <h1 style="margin-bottom:36px">Subsystems</h1>
+
+    <div class="sub-section panel reveal">
+      <div class="sub-header">
+        <span class="sub-tag">SYS-01</span>
+        <h2 style="border:none;margin:0;padding:0">Drive</h2>
+      </div>
+      <div class="sub-content">
+        <p>The drivetrain is the robot's mobility system. Our robot utilizes a <span class="sub-highlight">swerve drive system</span>, offering exceptional agility and precision by allowing independent control of each wheel's speed and direction. We use MK4i swerve modules 4” MK4i Billet Wheels and L2 gearing. The bot has a free speed of 15.5 ft./second.</p>
+        <!-- <div class="img-wrap"><img src="./assets/drive_cad.png" alt="Drive CAD"></div> -->
+      </div>
+    </div>
+
+    <div class="sub-section panel reveal">
+      <div class="sub-header">
+        <span class="sub-tag">SYS-02</span>
+        <h2 style="border:none;margin:0;padding:0">Shooter</h2>
+      </div>
+      <div class="sub-content">
+        <p>Our shooter is custom designed and has a fixed hood, powered by a Kraken x60, with a kicker powered by a Kraken x44. It utilizes <span class="sub-highlight">2 SDS 4 in. Brass Flywheel (1.5 lbs each)</span> and has a 1:1 gear ratio via belts. Additionally, we use the WestCoast Products GreyT 7" ID Turret, with a Kraken x60, allowing for a 360 degree range of motion. </p>
+        <!-- <div class="img-wrap"><img src="./assets/claw_cad.png" alt="Claw CAD"></div> -->
+      </div>
+    </div>
+
+    <div class="sub-section panel reveal">
+      <div class="sub-header">
+        <span class="sub-tag">SYS-04</span>
+        <h2 style="border:none;margin:0;padding:0">Intake</h2>
+      </div>
+      <div class="sub-content">
+        <p>Our intake has a "slapdown" design, and acts as retaining wall for the back of the hopper when deployed. The reduction on the pivot is <span class="sub-highlight">1:20</span>. Our intake features 4 live rollers and 1 dead roller, with 2 of them having 2'' compliant wheels and the other 
+            2 rollers being polycarbonate tube with a silicon sock for grip. The frontmost roller creates a <span class="sub-highlight">0.25''</span> of compression of the fuel </p>
+        <!-- <div class="img-wrap"><img src="./assets/elevator_cad.png" alt="Elevator CAD"></div> -->
+      </div>
+    </div>
+
+    <div class="sub-section panel reveal">
+      <div class="sub-header">
+        <span class="sub-tag">SYS-05</span>
+        <h2 style="border:none;margin:0;padding:0">Indexer</h2>
+      </div>
+      <div class="sub-content">
+        <p>Our indexer consists of <span class="sub-highlight">horizontal rollers</span> and one vertical axle with wheels near our kicker, fondly nicknamed <span class="sub-highlight">"the blender"</span>. Rollers are wrapped with Cats Tongue tape. The indexer contains 3 full width rollers (with 3D printed parts to assist with centering) and 3 shorter rollers to fit between the MK4i swerve modules.</p>
+        <!-- <div class="img-wrap"><img src="./assets/climber_cad.png" alt="Climber CAD"></div> -->
+      </div>
+    </div>
+
+    <div class="sub-section panel reveal">
+      <div class="sub-header">
+        <span class="sub-tag">SYS-03</span>
+        <h2 style="border:none;margin:0;padding:0">Photon Vision</h2>
+      </div>
+      <div class="sub-content">
+        <p><span class="sub-highlight">Photon Vision</span> leverages cameras and image processing to determine target distance, angle, and position. The system primarily tracks <span class="sub-highlight">AprilTags</span> on the field, enabling precise autonomous alignment and scoring. We use an orange pi.</p>
+        <!-- <div class="img-wrap" style="width:240px;min-height:140px;display:flex;align-items:center;justify-content:center;background:rgba(255,69,0,0.05)">
+          <div style="text-align:center;padding:20px">
+            <svg 
+              width="40" 
+              height="40" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="#FF4500" 
+              stroke-width="1.5" 
+              style="opacity:0.6;margin-bottom:10px">
+              <path d="M2 12s3-7 10-7 10 7 10 8-3 7-10 7-10-7-10-7Z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <p style="font-size:11px;color:var(--text-3);letter-spacing:1px">Vision System</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 80);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+
+<script>
+document.addEventListener('keydown', e => {
+  if (e.key === '1') window.location.href = 'index.html';
+  if (e.key === '2') window.location.href = 'about.html';
+  if (e.key === '3') window.location.href = 'subsystems.html';
+  if (e.key === '4') window.location.href = 'specs.html';
+  if (e.key === '5') window.location.href = 'info.html';
+  if (e.key === '6') window.location.href = 'outreach.html';
+});
+</script>
+
+</body>
+</html>

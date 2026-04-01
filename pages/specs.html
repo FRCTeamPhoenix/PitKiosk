@@ -9,12 +9,13 @@
 <nav class="navbar">
   <div class="container-fluid">
     <div class="navbar-buttons">
-      <a href="index1.html"><img id="brand" src="./assets/RedNoBack.PNG" alt="Phoenix"></a>
-      <a href="index1.html"><button class="navbar-btn"><img src="./assets/home.png" alt=""> Home</button></a>
-      <a href="about1.html"><button class="navbar-btn"><img src="./assets/about.png" alt=""> About Us</button></a>
-      <a href="subsystems1.html"><button class="navbar-btn"><img src="./assets/subsystems.png" alt=""> Subsystems</button></a>
-      <a href="specs1.html"><button class="navbar-btn active"><img src="./assets/specs.png" alt=""> Specifications</button></a>
-      <a href="info1.html"><button class="navbar-btn"><img src="./assets/matches.png" alt=""> Scouting Info</button></a>
+      <a href="index.html"><img id="brand" src="./assets/RedNoBack.PNG" alt="Phoenix"></a>
+      <a href="index.html"><button class="navbar-btn"><img src="./assets/home.png" alt=""> Home</button></a>
+      <a href="about.html"><button class="navbar-btn"><img src="./assets/about.png" alt=""> About Us</button></a>
+      <a href="subsystems.html"><button class="navbar-btn"><img src="./assets/subsystems.png" alt=""> Subsystems</button></a>
+      <a href="specs.html"><button class="navbar-btn active"><img src="./assets/specs.png" alt=""> Specifications</button></a>
+      <a href="info.html"><button class="navbar-btn"><img src="./assets/matches.png" alt=""> Scouting Info</button></a>
+      <a href="outreach.html"><button class="navbar-btn">Outreach</button></a>
     </div>
   </div>
 </nav>
@@ -29,9 +30,9 @@
         <small>Without bumpers</small>
       </div>
       <div class="spec-item reveal">
-        <h3>Drive</h3>
-        <p>Swerve Drive</p>
-        <small>L4 gearing</small>
+        <h3>Swerve Type</h3>
+        <p>SDS MK4I</p>
+        <small>L2 gearing</small>
       </div>
       <div class="spec-item reveal">
         <h3>Robot Controller</h3>
@@ -39,19 +40,19 @@
         <small>NI National Instruments</small>
       </div>
       <div class="spec-item reveal">
-        <h3>Height — Starting</h3>
-        <p>3 ft 5.5 in</p>
-        <small>Folded configuration</small>
-      </div>
-      <div class="spec-item reveal">
-        <h3>Height — Full Extension</h3>
-        <p>8 ft</p>
-        <small>Max elevator reach</small>
+        <h3>Height</h3>
+        <p>TBD in</p>
+        <small>Can drive under trench</small>
       </div>
       <div class="spec-item reveal">
         <h3>Robot Weight</h3>
         <p>114.3 lb</p>
         <small>Final competition weight</small>
+      </div>
+      <div class="spec-item reveal">
+        <h3>Hopper Capacity</h3>
+        <p>~ 40 fuel</p>
+        <!-- <small>Can !!!something here</small> -->
       </div>
       <!-- <div class="spec-item spec-wide reveal">
         <h3>Elevator System</h3>
@@ -78,5 +79,17 @@ const obs = new IntersectionObserver((entries) => {
 }, { threshold: 0.08 });
 document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
 </script>
+
+<script>
+document.addEventListener('keydown', e => {
+  if (e.key === '1') window.location.href = 'index.html';
+  if (e.key === '2') window.location.href = 'about.html';
+  if (e.key === '3') window.location.href = 'subsystems.html';
+  if (e.key === '4') window.location.href = 'specs.html';
+  if (e.key === '5') window.location.href = 'info.html';
+  if (e.key === '6') window.location.href = 'outreach.html';
+});
+</script>
+
 </body>
 </html>
